@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import BrandSlider from './Home/BrandSlider'
+import BrandSlide from './Home/BrandSlider'
 
 const Hero = () => {
   return (
@@ -42,7 +42,7 @@ const Hero = () => {
 
         </div>
       </div>
-      <BrandSlider/>
+    <BrandSlide/>
     </div>
   )
 }

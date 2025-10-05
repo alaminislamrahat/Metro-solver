@@ -1,42 +1,52 @@
 "use client";
 
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/autoplay";
-import { Autoplay } from "swiper";
-
 const logos = [
-  "/logos/luminus.png",
-  "/logos/brembo.png",
-  "/logos/motorola.png",
-  "/logos/luminus.png",
-  "/logos/brembo.png",
-  // add more logos as needed
+  "https://upload.wikimedia.org/wikipedia/commons/3/3e/Luminus_logo.png",
+  "https://upload.wikimedia.org/wikipedia/commons/7/73/Brembo_logo.svg",
+  "https://upload.wikimedia.org/wikipedia/commons/8/8f/Motorola_logo_2019.svg",
+  "https://upload.wikimedia.org/wikipedia/commons/b/b7/Tesla_T_symbol.svg",
+  "https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg",
+  "https://upload.wikimedia.org/wikipedia/commons/0/08/Nike_logo.svg",
+  "https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg",
+  "https://upload.wikimedia.org/wikipedia/commons/5/51/Google.png",
+  "https://upload.wikimedia.org/wikipedia/commons/5/5e/Amazon_logo.svg",
+  "https://upload.wikimedia.org/wikipedia/commons/f/fa/Facebook_f_logo_%282021%29.svg",
 ];
 
-const BrandSlider = () => {
+const MarqueeSlider = () => {
+  // Repeat logos to make a continuous scroll
+  const repeatedLogos = [...logos, ...logos];
+
   return (
-    <div className="py-8 bg-[#0a0311]">
-      <Swiper
-        modules={[Autoplay]}
-        spaceBetween={50}
-        slidesPerView={5}
-        loop={true}
-        autoplay={{ delay: 2000, disableOnInteraction: false }}
-        breakpoints={{
-          640: { slidesPerView: 2 },
-          768: { slidesPerView: 3 },
-          1024: { slidesPerView: 5 },
-        }}
-      >
-        {logos.map((logo, index) => (
-          <SwiperSlide key={index} className="flex justify-center items-center">
-            <img src={logo} alt={`brand-${index}`} className="h-12 object-contain" />
-          </SwiperSlide>
+    <div className="py-8 bg-[#0a0311] overflow-hidden">
+      <div className="flex animate-marquee whitespace-nowrap">
+        {repeatedLogos.map((logo, index) => (
+          <div key={index} className="mx-10 flex-shrink-0">
+            <img
+              src={logo}
+              alt={`brand-${index}`}
+              className="h-12 object-contain"
+            />
+          </div>
         ))}
-      </Swiper>
+      </div>
+
+      <style jsx>{`
+        @keyframes marquee {
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(-50%);
+          }
+        }
+        .animate-marquee {
+          display: inline-flex;
+          animation: marquee 20s linear infinite;
+        }
+      `}</style>
     </div>
   );
 };
 
-export default BrandSlider;
+export default MarqueeSlider;
