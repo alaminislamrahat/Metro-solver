@@ -1,0 +1,77 @@
+[
+    {
+        "title": "graphic design",
+        "description": "We create stunning visuals, branding, and layouts that capture your identity and engage your audience.",
+        "image": "https://img.icons8.com/color/96/graphic-design.png"
+    },
+    {
+        "title": "web & software development",
+        "description": "Build fast, secure, and modern web or software solutions tailored to your business goals.",
+        "image": "https://img.icons8.com/color/96/source-code.png"
+    },
+    {
+        "title": "multimedia and video editing",
+        "description": "Transform your ideas into professional-grade multimedia content and cinematic video edits.",
+        "image": "https://img.icons8.com/color/96/video-editing.png"
+    },
+    {
+        "title": "Digital Marketing",
+        "description": "Boost your brand visibility and reach the right audience through powerful online marketing strategies.",
+        "image": "https://img.icons8.com/color/96/marketing.png"
+    },
+    {
+        "title": "Creative Writting Solution",
+        "description": "Delivering high-quality, engaging written content that connects, informs, and inspires your audience.",
+        "image": "https://img.icons8.com/color/96/writer-male.png"
+    },
+    {
+        "title": "Seo",
+        "description": "Optimize your website to rank higher on search engines and attract organic traffic that converts.",
+        "image": "https://img.icons8.com/color/96/seo.png"
+    },
+    {
+        "title": "3D Animation & Visualisation",
+        "description": "Bring your ideas to life with 3D modeling, animation, and realistic visual rendering.",
+        "image": "https://img.icons8.com/color/96/3d-model.png"
+    },
+    {
+        "title": "E-Commerce Solution",
+        "description": "Create and scale your online store with user-friendly design and powerful backend systems.",
+        "image": "https://img.icons8.com/color/96/online-store.png"
+    },
+    {
+        "title": "Accounting",
+        "description": "Manage your business finances with accurate, efficient, and digital accounting services.",
+        "image": "https://img.icons8.com/color/96/accounting.png"
+    },
+    {
+        "title": "Special Combo",
+        "description": "Exclusive bundled service packages designed to give your business a complete digital boost.",
+        "image": "https://img.icons8.com/color/96/gift.png"
+    },
+    {
+        "title": "Premium Website",
+        "description": "High-end, performance-driven websites crafted with precision, creativity, and innovation.",
+        "image": "https://img.icons8.com/color/96/website.png"
+    },
+    {
+        "title": "Premium Domains",
+        "description": "Get premium domain names that enhance your brand recognition and digital credibility.",
+        "image": "https://img.icons8.com/color/96/domain.png"
+    },
+    {
+        "title": "Proxy",
+        "description": "Secure and reliable proxy services to protect your data and ensure fast connectivity.",
+        "image": "https://img.icons8.com/color/96/cloud-server.png"
+    },
+    {
+        "title": "Merchandise",
+        "description": "Design and customize branded merchandise to elevate your business identity and reach.",
+        "image": "https://img.icons8.com/color/96/t-shirt.png"
+    },
+    {
+        "title": "Academy",
+        "description": "Learn from professionals through expert-led training programs and digital skill courses.",
+        "image": "https://img.icons8.com/color/96/classroom.png"
+    }
+]
