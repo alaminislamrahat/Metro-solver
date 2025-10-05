@@ -1,11 +1,15 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useState } from "react";
-import { 
-  SiAdobe, SiReact, SiAdobephotoshop, SiGoogleads, SiWriteas, SiGoogle, 
-  SiBlender, SiShopify, SiQuickbooks, SiGift, SiWordpress, SiGodaddy, 
-  SiCloudflare, SiTshirt, SiReadthedocs 
+import {
+  SiAdobe, SiReact, SiAdobephotoshop, SiGoogleads, SiWriteas, SiGoogle,
+  SiBlender, SiShopify, SiQuickbooks, SiGift, SiWordpress, SiGodaddy,
+  SiCloudflare, SiTshirt, SiReadthedocs
 } from "react-icons/si";
+
+import { MdArrowOutward } from "react-icons/md";
+
 
 // Map your JSON titles to React Icons
 const iconMap = {
@@ -67,13 +71,15 @@ const Service = () => {
           return (
             <div
               key={index}
-              className="bg-[#130c1a] hover:bg-gradient-to-tr to-purple-500/50 from-black rounded-xl p-6 flex flex-col items-start   hover:scale-105 transition-transform duration-300"
+              className="bg-[#130c1a] hover:bg-gradient-to-tr to-purple-500/50 from-black rounded-xl p-6 flex flex-col items-start    hover:scale-105 transition-transform duration-300"
             >
               <div className="mb-4">
                 <IconComponent size={48} color="white" />
               </div>
               <h2 className="text-white text-xl font-semibold mb-2">{service.title}</h2>
               <p className="text-gray-300">{service.description}</p>
+              <Link className="text-purple-700 mt-1 flex items-center justify-center gap-1" href={""}>Learn More <MdArrowOutward className="text-white ml-0.5" />
+              </Link>
             </div>
           );
         })}

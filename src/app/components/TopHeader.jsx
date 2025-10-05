@@ -8,7 +8,7 @@ const TopHeader = () => {
         {
             list.map((item, idx)=> (
                <div key={idx}>
-                 <p className={`${item === "30% Off" && "btn btn-sm bg-red-500 rounded-3xl px-5 text-white border-none"}`} >
+                 <p className={`${item === "30% Off" && "btn btn-sm bg-gradient-to-r from-red-500 to-orange-400 rounded-3xl px-5 text-white border-none"}`} >
                     {item}
                 </p>
               
